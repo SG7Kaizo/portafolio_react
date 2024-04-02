@@ -1,0 +1,89 @@
+.detailsContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.col {
+    max-width: 400px;
+    margin: 15px;
+    height: auto;
+    width: 80%;
+}
+
+.imageImage {
+    border-radius: 15px;
+}
+
+.imageDetails {
+    font-size: 1.5rem;
+}
+
+.firstItem {
+    margin-top: 0;
+}
+
+.loader {
+    width: 60px;
+    /* Aumentamos el tamaño del loader */
+    height: 60px;
+    /* Aumentamos el tamaño del loader */
+    border: 6px solid rgba(255, 0, 0, .8);
+    /* Cambiamos el color del borde y hacemos más visible */
+    border-left-color: transparent;
+    border-radius: 50%;
+    position: fixed;
+    /* Lo posicionamos de forma fija */
+    top: 50%;
+    /* Lo ubicamos en el centro vertical */
+    left: 50%;
+    /* Lo ubicamos en el centro horizontal */
+    transform: translate(-50%, -50%);
+    /* Lo centramos */
+    animation: spin89345 1s linear infinite;
+}
+
+@keyframes spin89345 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* styles.module.css */
+.button {
+    color: #1a1aff;
+    /* Azul para el texto */
+    text-decoration: none;
+    font-size: 20px;
+    border: none;
+    background: #6ec6ff;
+    /* Fondo azul */
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 20px;
+    /* Ajusta el relleno según sea necesario */
+    border-radius: 20px;
+    /* Borde redondeado */
+    position: relative;
+    /* Para alinear el pseudo-elemento */
+    overflow: hidden;
+    /* Ocultar el pseudo-elemento inicialmente */
+}
+
+
+
+.titles {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 26px;
+    word-spacing: 2px;
+    color: #e49400;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+}

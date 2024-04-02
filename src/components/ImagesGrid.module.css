@@ -1,0 +1,43 @@
+.imagesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 230px);
+  gap: 40px;
+  padding: 40px;
+  justify-content: center;
+}
+
+@media (max-width: 560px) {
+  .imagesGrid {
+    grid-template-columns: 100%;
+  }
+}
+
+.loader {
+  width: 60px;
+  /* Aumentamos el tamaño del loader */
+  height: 60px;
+  /* Aumentamos el tamaño del loader */
+  border: 6px solid rgba(255, 0, 0, .8);
+  /* Cambiamos el color del borde y hacemos más visible */
+  border-left-color: transparent;
+  border-radius: 50%;
+  position: fixed;
+  /* Lo posicionamos de forma fija */
+  top: 50%;
+  /* Lo ubicamos en el centro vertical */
+  left: 50%;
+  /* Lo ubicamos en el centro horizontal */
+  transform: translate(-50%, -50%);
+  /* Lo centramos */
+  animation: spin89345 1s linear infinite;
+}
+
+@keyframes spin89345 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

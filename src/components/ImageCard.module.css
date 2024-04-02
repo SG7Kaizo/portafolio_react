@@ -1,0 +1,33 @@
+.imageCard {
+    list-style: none;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.imageCard:hover {
+    opacity: 0.8;
+}
+
+.imageImage {
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+@media (max-width: 560px) {
+    .imageImage {
+        width: 90%;
+        height: auto;
+    }
+}
+
+.titles {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+        font-size: 26px;
+        word-spacing: 2px;
+        color: #e49400;
+        font-weight: normal;
+        text-decoration: none;
+        font-style: normal;
+        font-variant: normal;
+        text-transform: none;
+}
